@@ -1,0 +1,248 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-136584263-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-136584263-1');
+</script>
+<meta http-equiv="Content-type" content="text/html;" charset="UTF-8"/>
+<meta http-equiv="Content-Language" content="es-ES"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Ministerio de Trabajo - Certificado Único Laboral</title>
+<meta name="description" content="El documento que necesitas para postular a un empleo. Reúne tu información personal, antecedentes policiales, penales y judiciales, educación y experiencia laboral formal. Lo puedes obtener en línea, rápido y gratis.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:url"                content="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Certificado Único Laboral (CERTIJOVEN y CERTIADULTO) - Ministerio de Trabajo y Promoción del Empleo" />
+<meta property="og:description"        content="El documento que necesitas para postular a un empleo. Reúne tu información personal, antecedentes policiales, penales y judiciales, educación y experiencia laboral formal. Lo puedes obtener en línea, rápido y gratis." />
+<meta property="og:image"              content="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral/images/certificado_unico_laboral.png" />
+
+<link href="images/favicon.ico" rel="shortcut icon" type="image/png" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/CertificadoUnicoLaboral/css/bootstrap-datepicker.min.css">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+<link rel="stylesheet" href="/CertificadoUnicoLaboral/css/cul.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/CertificadoUnicoLaboral/js/jquery.redirect.js"></script>
+<script src="/CertificadoUnicoLaboral/js/jquery.validate.min.js"></script>
+<script src="/CertificadoUnicoLaboral/js/bootstrap-datepicker.js"></script>
+<script src="/CertificadoUnicoLaboral/js/bootstrap-datepicker.es.min.js"></script>
+
+<script src="/CertificadoUnicoLaboral/js/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/CertificadoUnicoLaboral/js/certijoven-v3.1.js"></script>
+</head>
+<body>
+<div id="loading">
+    <img id="loading-image" src="images/ajax-loader.gif" alt="Cargando..." />
+</div>
+<div id="loading-CUL">
+    <img id="loading-image-CUL" src="images/ajax-loader.gif" alt="Cargando información de las instituciones..." />
+    <div class="loading-text">
+        <p class="text-danger">Estimado usuario, por favor espere un momento</p>
+        <p class="text-danger" id="loading-text-value"></p>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand logo-gob" href="https://www.empleosperu.gob.pe">
+        <img src="images/escudo.svg" alt="Logotipo Gobierno del Perú" class="escudo"/>
+        <img src="images/logo.svg" alt="Logotipo Gobierno del Perú" class="texto-gob"/>
+    </a>
+    <a class="nav-link logo-texto" href="/CertificadoUnicoLaboral">Ministerio de Trabajo<br/>y Promoción del Empleo</a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active"></li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                
+                    
+                        <a class="nav-link" href="/CertificadoUnicoLaboral">Inicio</a>
+                    
+                    
+                
+
+            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link" href="/CertificadoUnicoLaboral/PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+            </li>-->
+        </ul>
+        
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown"><a
+                        class="nav-link dropdown-toggle" href="#" id="dropdown10"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="material-icons c-persona"> person </i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a onclick="Javascript:limpiar();" class="dropdown-item"
+                           href="/CertificadoUnicoLaboral/Salir.html">Cerrar sesión <span class="material-icons">power_settings_new</span></a>
+                    </div>
+                </li>
+            </ul>
+        
+    </div>
+</nav>
+
+<div class="container-fluid miga">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item miga-home">
+                    <a href="https://www.empleosperu.gob.pe"><span class="material-icons-outlined">home</span></a>
+                </li>
+                <li class="breadcrumb-item"><a href="https://www.empleosperu.gob.pe">Ministerio de Trabajo y Promoción del Empleo</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="/CertificadoUnicoLaboral">Certificado Único Laboral</a></li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+
+<div id="ajax-mensaje" class="container mb-2" style="display: none">
+    <div class="row">
+        <div class="col alert alert-warning fade show" id="ajax-alert">
+            <i class="material-icons"> info_outline</i> <span id="p-mensaje"></span>
+            <button type="button" onclick="javascript:cerrarNotificacion('#ajax-mensaje');" class="close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-danger">PAUTAS PARA ATENDER INCIDENCIAS EN EL CAMPO DE ANTECEDENTES JUDICIALES O PENALES</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            En caso algún campo de informaci&oacute;n sobre antecedentes tenga el mensaje <b><i>Se requiere actualizar esta información</i></b>, siga las siguientes indicaciones:
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            </br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h2 class="text-danger">1) Verificaci&oacute;n de Antecedentes Penales</h2>
+            <div class="row">
+                <div class="col-md-1">&nbsp;</div>
+                    <div class="col">
+            Según lo indicado por el Poder Judicial si su registro indica que tiene una observación
+             esto no implica necesariamente la existencia de antecedentes, siendo que el estado
+              &quot;observado&quot; se genera cuando el nombre del solicitante presenta coincidencias
+               y/o similitudes con personas inscritas en la base de datos del Registro Nacional
+               de Condenas del Poder Judicial.
+            <br/>Para comunicar su caso, por favor, diríjase al Poder Judicial a través de su mesa
+             de partes virtual (<a target="_blank" href="https://sgd.pj.gob.pe/mpea/inicio">https://sgd.pj.gob.pe/mpea/inicio</a>)
+              o presencial anexando su Certificado Único Laboral (se adjunta modelo para solicitar la revisión de su caso).
+            <br/><a target="_blank" href="files/MODELO_SOLICITUD_PJ_CUL.docx">Ver propuesta de modelo de solicitud de verificación de información</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            </br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2 class="text-danger">2) Verificaci&oacute;n de Antecedentes Judiciales</h2>
+            <div class="row">
+                <div class="col-md-1">&nbsp;</div>
+                    <div class="col">
+            Según lo indicado por el INPE, el estado &quot;observado&quot; no implica necesariamente la existencia de antecedentes, siendo que el mensaje se genera cuando el nombre del solicitante presenta coincidencias y/o similitudes con personas inscritas en la base de datos del Registro Penitenciario o cuando registra inscripción de antecedente judicial vigente o cancelado.
+            <br/>Para comunicar al INPE su caso, por favor, dir&iacute;jase a su sede mas cercana,
+                 adjuntando su Certificado Único Laboral (se adjunta modelo para solicitar la
+                 revisi&oacute;n de su caso).
+            <br/>Para comunicar su caso, por favor, diríjase al INPE a través de su mesa de partes
+            virtual (<a target="_blank" href="https://mesadepartes.inpe.gob.pe/">https://mesadepartes.inpe.gob.pe/</a>) o presencial anexando su Certificado
+             Único Laboral (se adjunta modelo para solicitar la revisión de su caso).
+            <br/><a target="_blank" href="files/MODELO_SOLICITUD_INPE_CUL.docx">Ver propuesta de modelo de solicitud de verificación de información</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <br/><br/><b>Cabe recordar que el Certificado Único Laboral solo puede reflejar la información oficial que  otras instituciones comparten al Ministerio de Trabajo y Promoción del Empleo, por lo que nuestra institución no puede cambiar dichos contenidos.</b
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+
+    <div class="container footer-top">
+        <div class="row">
+            <!--
+            <div class="col">
+                <a href="/CertificadoUnicoLaboral/files/Manual_de_usuario_CUL.pdf" target="_blank" class="p-listado ml-3">Manual de usuario</a>
+            </div>
+            -->
+            <div class="col text-center popup" onclick="showPopup()">
+                <p>
+                    <a target="_blank" href="files/Ley 31760 - Ley CUL.pdf"><b>Ley</b></a> y
+                    <a target="_blank" href="files/Ley 31760 - Reglamento.pdf"><b>Reglamento</b></a>
+                    del Certificado Único Laboral </p>
+                 <span class="popuptext" id="LeyPopup">
+                Con la aprobación de su reglamento, el pasado 30 de diciembre del 2023
+                entra en vigencia la Ley N° 31760, Ley del Certificado Único Laboral.
+                En dicho marco se irán implementando progresivamente algunas mejoras
+                a este servicio, iniciando una marcha blanca desde el 23 de junio del 2024.
+                </span>
+            </div>
+            <!--<div class="col text-right">
+                <p>Canal de atención y consultas: <span>0800 71 707</span></p>
+            </div>-->
+
+
+        </div>
+    </div>
+    <div class="container-fluid footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <img src="images/pastillaMTPE.svg" alt="pastilla Ministerio de Trabajo"
+                         class="float-left mt-5 mb-5">
+                </div>
+                <div class="col-sm-6 col-md-4 offset-md-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
