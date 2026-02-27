@@ -54,10 +54,6 @@ $(document).ready(function () {
     });
     $("#btnGenerar").click(function () {
         $('#loading').show();
-        gtag('event', 'certijoven confirmando solicitud del certificado', {
-            'event_category': 'CERTIJOVEN_CONFIRMANDO',
-            'event_label': 'confirmando solicitud del certificado'
-        });
     });
     $("#refrescarHistorial").click(function () {
         window.location.href = 'Historial.html';
