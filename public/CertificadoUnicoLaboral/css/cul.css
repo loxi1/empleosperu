@@ -304,6 +304,8 @@ body {
     margin-right: auto;
     display: block;
     width: 70%;
+    max-width: 100%;
+    height: auto;
 }
 
 .cul-visor .text-center {
@@ -552,4 +554,10 @@ body {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+/* contenedor con scroll si el canvas queda grande */
+.cul-visor .pdf-wrap{
+  width: 100%;
+  overflow: auto;
 }

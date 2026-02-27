@@ -1,0 +1,192 @@
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-type" content="text/html;" charset="UTF-8">
+  <meta http-equiv="Content-Language" content="es-ES">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ministerio de Trabajo - Certificado Único Laboral</title>
+  <meta name="description"
+    content="El documento que necesitas para postular a un empleo. Reúne tu información personal, antecedentes policiales, penales y judiciales, educación y experiencia laboral formal. Lo puedes obtener en línea, rápido y gratis.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:url" content="https://www.empleosperu.org/CertificadoUnicoLaboral">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="Certificado Único Laboral (CERTIJOVEN y CERTIADULTO) - Ministerio de Trabajo y Promoción del Empleo">
+  <meta property="og:description"
+    content="El documento que necesitas para postular a un empleo. Reúne tu información personal, antecedentes policiales, penales y judiciales, educación y experiencia laboral formal. Lo puedes obtener en línea, rápido y gratis.">
+  <meta property="og:image"
+    content="https://www.empleosperu.org/CertificadoUnicoLaboral/images/certificado_unico_laboral.png">
+
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/cul.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/jquery.redirect.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/bootstrap-datepicker.js"></script>
+  <script src="./js/bootstrap-datepicker.es.min.js"></script>
+
+  <script src="./js/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./js/certijoven-v3.1.js"></script>
+</head>
+
+<body>
+  <div id="loading" style="display: none;">
+    <img id="loading-image" src="images/ajax-loader.gif" alt="Cargando...">
+  </div>
+  <div id="loading-CUL" style="display: none;">
+    <img id="loading-image-CUL" src="images/ajax-loader.gif" alt="Cargando información de las instituciones...">
+    <div class="loading-text">
+      <p class="text-danger">Estimado usuario, por favor espere un momento</p>
+      <p class="text-danger" id="loading-text-value"></p>
+    </div>
+
+  </div>
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand logo-gob" href="https://www.empleosperu.org">
+      <img src="images/escudo.svg" alt="Logotipo Gobierno del Perú" class="escudo">
+      <img src="images/logo.svg" alt="Logotipo Gobierno del Perú" class="texto-gob">
+    </a>
+    <a class="nav-link logo-texto" href="/CertificadoUnicoLaboral">Ministerio de Trabajo<br>y Promoción del Empleo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active"></li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+
+
+          <a class="nav-link" href="/CertificadoUnicoLaboral">Inicio</a>
+
+
+
+
+        </li>
+        <!--<li class="nav-item">
+                <a class="nav-link" href="/CertificadoUnicoLaboral/PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+            </li>-->
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid miga">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item miga-home">
+            <a href="https://www.empleosperu.org"><span class="material-icons-outlined">home</span></a>
+          </li>
+          <li class="breadcrumb-item"><a href="https://www.empleosperu.org">Ministerio de Trabajo y Promoción del
+              Empleo</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="/CertificadoUnicoLaboral">Certificado Único
+              Laboral</a></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <script src="./js/pdf.js"></script>
+  <script src="./js/certificado-v3.1.js"></script>
+  <script>
+    // Configurar el worker
+    pdfjsLib.GlobalWorkerOptions.workerSrc = './js/pdf.worker.js';
+  </script>
+  <!--INICIO CERTIFICADO-->
+  <div class="container cul-visor">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-danger">Certificado Único Laboral</h1>
+      </div>
+    </div>
+
+    <div class="row documento-imagen p-3">
+      <div class="col pt-3">
+        <input id="dni" value="VBGtlmOLCPzpQW43MJeoNA==" hidden>
+        <input id="tipoDocumento" value="10080399" hidden>
+        <input id="secuencia" value="54" hidden>
+
+        <div class="text-center">
+          <button class="btn btn-outline-dark btn-sm" id="prev">
+            <i class="material-icons">navigate_before</i> Anterior
+          </button>
+          <button class="btn btn-outline-dark btn-sm" id="next">
+            Siguiente <i class="material-icons">navigate_next</i>
+          </button>
+          &nbsp;&nbsp;<span>Pág.: <span id="page_num">1</span> / <span id="page_count">0</span></span>
+        </div>
+
+        <div class="pdf-wrap">
+          <canvas id="the-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FIN CERTIFICADO-->
+
+
+
+  <footer class="footer">
+
+    <div class="container footer-top">
+      <div class="row">
+        <!--
+            <div class="col">
+                <a href="/CertificadoUnicoLaboral/files/Manual_de_usuario_CUL.pdf" target="_blank" class="p-listado ml-3">Manual de usuario</a>
+            </div>
+            -->
+        <div class="col text-center popup" onclick="showPopup()">
+          <p>
+            <a target="_blank" href="files/Ley 31760 - Ley CUL.pdf"><b>Ley</b></a> y
+            <a target="_blank" href="files/Ley 31760 - Reglamento.pdf"><b>Reglamento</b></a>
+            del Certificado Único Laboral
+          </p>
+          <span class="popuptext" id="LeyPopup">
+            Con la aprobación de su reglamento, el pasado 30 de diciembre del 2023
+            entra en vigencia la Ley N° 31760, Ley del Certificado Único Laboral.
+            En dicho marco se irán implementando progresivamente algunas mejoras
+            a este servicio, iniciando una marcha blanca desde el 23 de junio del 2024.
+          </span>
+        </div>
+        <!--<div class="col text-right">
+                <p>Canal de atención y consultas: <span>0800 71 707</span></p>
+            </div>-->
+
+
+      </div>
+    </div>
+    <div class="container-fluid footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <img src="images/pastillaMTPE.svg" alt="pastilla Ministerio de Trabajo" class="float-left mt-5 mb-5">
+          </div>
+          <div class="col-sm-6 col-md-4 offset-md-4">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="give-freely-root-bcjindcccaagfpapjjmafapmmgkkhgoa" class="give-freely-root"
+    data-extension-id="bcjindcccaagfpapjjmafapmmgkkhgoa" data-extension-name="JSON Formatter" style="display: block;">
+  </div>
+</body>
+
+</html>
